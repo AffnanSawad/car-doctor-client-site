@@ -9,12 +9,30 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Root from './Root/Root.jsx';
+import Home from './Pages/Home/Home/Home.jsx';
+import AboutNav from './Pages/Home/AboutNav/AboutNav.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+
+    children: [
+
+  {
+    path:'/',
+    element: <Home></Home>
+  },
+  {
+    path:'/about',
+    element: <AboutNav></AboutNav>
+  },
+
+
+
+    ]
   },
 ]);
 
@@ -23,7 +41,18 @@ const router = createBrowserRouter([
 
 // 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ 
+// imp
+  <div className="max-w-7xl mx-auto">
+
+<StrictMode>
     <RouterProvider router={router} />
   </StrictMode>,
+
+
+
+  </div>
+
+
+
 )
