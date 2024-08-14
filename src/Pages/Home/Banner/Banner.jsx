@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import image1 from '../../../assets/images/banner/1.jpg'
 import image2 from '../../../assets/images/banner/2.jpg'
 import image3 from '../../../assets/images/banner/3.jpg'
@@ -26,7 +27,16 @@ const Banner = () => {
    <div className='flex gap-4 mt-5  mr-5'>
    
    <button className="btn btn-warning">Discover More</button>
-<button className="btn btn-error">Latest Project</button>
+ 
+ 
+ 
+ 
+ <Link to='/contact'>
+ 
+ <button className="btn btn-error">Emergency Contact</button>
+ </Link>
+ 
+
 
    </div>
 

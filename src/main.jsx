@@ -12,6 +12,7 @@ import {
 import Root from './Root/Root.jsx';
 import Home from './Pages/Home/Home/Home.jsx';
 import AboutNav from './Pages/Home/AboutNav/AboutNav.jsx';
+import Contact from './Pages/Home/Contact/Contact.jsx';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path:'/about',
     element: <AboutNav></AboutNav>
+  },
+  {
+    path:'/contact',
+    element: <Contact></Contact>
   },
 
 
