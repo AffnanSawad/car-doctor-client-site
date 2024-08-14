@@ -22,7 +22,7 @@ const Team = () => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title font-bold">Car Engine Plug</h2>
-    <p>Engine Expert</p>
+    <p className='font-bold'>Engine Expert</p>
     <div className="card-actions">
       <button className="btn btn-outline btn-error"> +001234556 </button>
     </div>
@@ -41,7 +41,7 @@ const Team = () => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title font-bold">Master Technician</h2>
-    <p>Technical Expert</p>
+    <p className='font-bold'>Technical Expert</p>
     <div className="card-actions">
     <button className="btn btn-outline btn-error"> +001234557 </button>
 
@@ -61,7 +61,7 @@ const Team = () => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title font-bold">Automotive Technician/Mechanic</h2>
-    <p>Parts Specialist</p>
+    <p className='font-bold'>Parts Specialist</p>
     <div className="card-actions">
     <button className="btn btn-outline btn-error"> +001234558 </button>
     </div>
