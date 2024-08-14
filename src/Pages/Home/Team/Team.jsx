@@ -2,6 +2,9 @@ import team1 from '../../../assets/images/team/1.jpg'
 import team2 from '../../../assets/images/team/2.jpg'
 import team3 from '../../../assets/images/team/3.jpg'
 
+import { MdAddCall } from "react-icons/md";
+
+
 const Team = () => {
     return (
         <div className="mt-2 mb-4">
@@ -24,7 +27,8 @@ const Team = () => {
     <h2 className="card-title font-bold">Car Engine Plug</h2>
     <p className='font-bold'>Engine Expert</p>
     <div className="card-actions">
-      <button className="btn btn-outline btn-error"> +001234556 </button>
+      <button className="btn btn-outline btn-error"> <MdAddCall />
+      +001234556 </button>
     </div>
   </div>
 </div>
@@ -43,7 +47,8 @@ const Team = () => {
     <h2 className="card-title font-bold">Master Technician</h2>
     <p className='font-bold'>Technical Expert</p>
     <div className="card-actions">
-    <button className="btn btn-outline btn-error"> +001234557 </button>
+    <button className="btn btn-outline btn-error"> <MdAddCall />
+    +001234557 </button>
 
     </div>
   </div>
@@ -63,7 +68,8 @@ const Team = () => {
     <h2 className="card-title font-bold">Automotive Technician/Mechanic</h2>
     <p className='font-bold'>Parts Specialist</p>
     <div className="card-actions">
-    <button className="btn btn-outline btn-error"> +001234558 </button>
+    <button className="btn btn-outline btn-error"> <MdAddCall />
+    +001234558 </button>
     </div>
   </div>
 </div>
