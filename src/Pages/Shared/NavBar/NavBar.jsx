@@ -31,8 +31,18 @@ const NavBar = () => {
   
   <li className="font-bold"> <Link to='/'> Home  </Link>   </li>
   <li className="font-bold"> <Link to='/about'> About  </Link>   </li>
-  <li className="font-bold"> <Link to='/services'>  Services </Link>   </li>
-  <li className="font-bold"> <Link to='/blog'>  Blog   </Link>   </li>
+  
+  {
+    user ?.email ? 
+    <li className="font-bold"> <Link to='/bookings'>My Bookings</Link> </li>
+
+    :
+
+    <li className="font-bold"> <Link to='/login'>Log In</Link> </li>
+  }
+
+
+  {/* <li className="font-bold"> <Link to='/blog'>  Blog   </Link>   </li> */}
   <li className="font-bold"> <Link to='/contact'>  Contact  </Link>   </li>
   
   
