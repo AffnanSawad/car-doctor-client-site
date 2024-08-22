@@ -14,7 +14,7 @@ const PrivateRoute = ({children}) => {
 
     //  logIn korar por jate jkne click kora hoisilo sekane jai.
     const location = useLocation();
-    console.log(location.pathname);
+    // console.log(location.pathname);
 
     // loading show korbe . load korle jei page e ache sekanei thakbe.
     // onno page e nibe na load korle

@@ -9,7 +9,7 @@ const BookingRow = ({booking}) => {
      // handleDelete
      const handleDelete = id => {
 
-        console.log('deleted', _id);
+        // console.log('deleted', _id);
   
   
         // Sweetalert2
@@ -27,7 +27,7 @@ const BookingRow = ({booking}) => {
   
           
             // fetching delete
-            fetch(`http://localhost:5000/bookings/${id}`,{
+            fetch(`https://car-doctor-bdserver-sandy.vercel.app/bookings/${id}`,{
   
               method:'DELETE'
             })
@@ -36,7 +36,7 @@ const BookingRow = ({booking}) => {
   
             .then(data=> {
   
-              console.log(data);
+              // console.log(data);
   
               if(data.deletedCount > 0 ){
   

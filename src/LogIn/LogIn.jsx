@@ -17,7 +17,7 @@ const LogIn = () => {
 
 //  logIn korar por jate jkne click kora hoisilo sekane jai.
  const location = useLocation();
- console.log(location);
+//  console.log(location);
 
  const navigate = useNavigate();
 
@@ -37,7 +37,7 @@ const [success,setSuccess] = useState('');
      const email = e.target.email.value;
      const password = e.target.password.value;
 
-     console.log(email,password);
+    //  console.log(email,password);
 
 
      if(password.length<6){
@@ -95,7 +95,11 @@ const [success,setSuccess] = useState('');
 
   googleLogIn()
 
- .then(result =>console.log(result.user))
+ .then(result =>
+  {
+    // console.log(result.user)
+  
+  })
 
 
  .catch(error=>{

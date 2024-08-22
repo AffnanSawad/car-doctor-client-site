@@ -26,7 +26,7 @@ const Banner = () => {
 
    <div className='flex gap-4 mt-5  mr-5'>
    
-   <button className="btn btn-warning">Discover More</button>
+   <button  className="btn btn-warning">Descover More</button>
  
  
  

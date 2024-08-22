@@ -103,16 +103,16 @@ const facebookLogin = ()=>{
 
             // const loggedUser = {email:userEmail}
     
-            axios.post( 'http://localhost:5000/jwt',loggedUser, {withCredentials:true} )
+            axios.post( 'https://car-doctor-bdserver-sandy.vercel.app/jwt',loggedUser, {withCredentials:true} )
 
             .then(res=>{
-                console.log('Token Response',res.data);
+                // console.log('Token Response',res.data);
             })    
 
         }
     
         else{
-            axios.post( 'http://localhost:5000/logout',loggedUser, {withCredentials:true} )
+            axios.post( 'https://car-doctor-bdserver-sandy.vercel.app/logout',loggedUser, {withCredentials:true} )
 
             .then(res=>{
                 console.log('logout Response',res.data);

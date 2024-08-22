@@ -26,7 +26,7 @@ const [error , setError] = useState('');
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        console.log(name,email,password);
+        // console.log(name,email,password);
 
 
 
@@ -56,7 +56,7 @@ const [error , setError] = useState('');
         sign_Up(email,password)
         .then(result=>{
 
-            console.log(result.user);
+            // console.log(result.user);
 
             setSuccess('Sign Up Successfully');
 
