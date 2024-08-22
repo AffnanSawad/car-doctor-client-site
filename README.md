@@ -1,8 +1,17 @@
-# React + Vite
+Client Site Link :  https://car-doctor-client-6ce69.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Car-Doctor is a web application where users can book various car repair services. The platform allows users to sign up, log in, and manage their bookings efficiently.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication**: Sign up and log in using secure JSON Web Tokens (JWT).
+- **Book Services**: Browse and book from a variety of car repair services.
+- **Manage Bookings**: View your current bookings and delete them if needed.
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript (React) 
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Version Control**: Git
