@@ -12,7 +12,7 @@ const Bookings = () => {
 
    useEffect(   
     ()=>{
-    fetch(url)
+    fetch(url , {credentials:'include'} )
     .then(res=>res.json())
     .then(data=> setbookings(data))
     

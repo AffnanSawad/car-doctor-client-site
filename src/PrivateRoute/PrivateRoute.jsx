@@ -1,6 +1,6 @@
 
 import { useContext } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
@@ -10,6 +10,11 @@ const PrivateRoute = ({children}) => {
     // import useContext
 
     const {user , loading} = useContext(AuthContext);
+     
+
+    //  logIn korar por jate jkne click kora hoisilo sekane jai.
+    const location = useLocation();
+    console.log(location.pathname);
 
     // loading show korbe . load korle jei page e ache sekanei thakbe.
     // onno page e nibe na load korle
@@ -23,8 +28,8 @@ const PrivateRoute = ({children}) => {
 
         return children;
     }
-
-    return  <Navigate to='/login'> </Navigate>
+//  logIn korar por jate jkne click kora hoisilo sekane jai.
+    return  <Navigate state={location.pathname} to='/login'> </Navigate>
 };
 
 export default PrivateRoute;

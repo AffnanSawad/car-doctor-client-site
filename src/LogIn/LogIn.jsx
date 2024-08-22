@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 
 
@@ -13,6 +13,13 @@ const LogIn = () => {
   
   // usecontext
  const {log_In,googleLogIn,facebookLogin} =useContext(AuthContext);
+
+
+//  logIn korar por jate jkne click kora hoisilo sekane jai.
+ const location = useLocation();
+ console.log(location);
+
+ const navigate = useNavigate();
 
 //  log in error / success
 
@@ -62,6 +69,11 @@ const [success,setSuccess] = useState('');
          console.log(result.user);
 
          setSuccess('Log In Successfully!');
+        
+
+         //  logIn korar por jate jkne click kora hoisilo sekane jai.
+
+         navigate(location?.state ? location?.state : '/')
 
          // reset form
          e.target.reset();
