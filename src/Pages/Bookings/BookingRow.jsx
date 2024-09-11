@@ -50,7 +50,7 @@ const BookingRow = ({booking}) => {
               })
   
              // remaining foods After Delete
-             const remaining = booking.fitler( book => book._id !== _id )
+             const remaining = booking.filter( book => book._id !== _id )
   
              setRemainingFoods(remaining);
   
